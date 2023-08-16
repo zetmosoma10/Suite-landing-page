@@ -168,3 +168,46 @@ h3 {
     text-align: left;
   }
 }
+
+.grid {
+  display: grid;
+}
+
+@media (min-width: 689px) {
+  .grid-1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 689px) {
+  .grid-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+  }
+}
+@media (min-width: 689px) {
+  .grid-1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer {
+  background: #f3ede7;
+  padding-bottom: 7rem;
+  padding-top: 10rem;
+}
+.footer p {
+  font-size: 1.5rem;
+  line-height: 32px;
+  letter-spacing: 0.08px;
+}
+.footer .grid {
+  justify-items: center;
+  row-gap: 3rem;
+}
+@media (min-width: 689px) {
+  .footer .grid .social {
+    justify-self: self-end;
+  }
+  .footer .grid .footer__logo {
+    justify-self: self-start;
+  }
+}
