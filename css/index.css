@@ -11,9 +11,110 @@ html {
 body {
   margin: 0;
   font-family: "Epilogue", sans-serif;
+  background-color: #faf8f6;
+  color: #49566d;
 }
 
 .container {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1.8rem;
+  line-height: 32px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: #172339;
+}
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 44px;
+  letter-spacing: -0.53px;
+}
+@media (min-width: 689px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 64px;
+    letter-spacing: -0.78px;
+  }
+}
+@media (min-width: 1110px) {
+  h1 {
+    font-size: 7.2rem;
+    line-height: 78px;
+    letter-spacing: -1px;
+  }
+}
+
+h2 {
+  font-size: 3.8rem;
+  line-height: 44px;
+  letter-spacing: -0.53px;
+}
+@media (min-width: 1110px) {
+  h2 {
+    font-size: 4.8rem;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.btn, .btn--blue, .btn--outline {
+  font-weight: bold;
+  font-family: "Epilogue", sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #172339;
+  font-size: 1.4rem;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  padding: 1.1rem 0;
+  border: 1px solid #172339;
+  width: 18.2rem;
+}
+.btn--outline:hover, .btn--outline:focus {
+  background-color: #172339;
+  color: #faf8f6;
+}
+@media (min-width: 689px) {
+  .btn--outline {
+    font-size: 1.6rem;
+    letter-spacing: -0.16px;
+    line-height: 32px;
+    width: 21.9rem;
+  }
+}
+
+.btn--blue {
+  border: 0;
+  background-color: #172339;
+  color: #faf8f6;
+  padding: 1.5rem 0;
+  font-size: 1.8rem;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  width: 25.6rem;
+}
+.btn--blue:hover, .btn--blue:focus {
+  color: #faf8f6;
+  background-image: linear-gradient(to bottom right, #a060ff, #cb30e3, #ffa84e);
 }

@@ -14,6 +14,8 @@ html {
 body {
   margin: 0;
   font-family: $font-family;
+  background-color: $color-Primary-white;
+  color: $color-Primary-greyish-blue;
 }
 
 .container {
@@ -21,3 +23,51 @@ body {
   margin: 0 auto;
 }
 
+p {
+  margin-top: 0;
+  font-size: 1.8rem;
+  line-height: 32px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: $color-Primary-dark-blue;
+}
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 44px;
+  letter-spacing: -0.53px;
+
+  @include breakpoints($tablet-breakpoint) {
+    font-size: 5.6rem;
+    line-height: 64px;
+    letter-spacing: -0.78px;
+  }
+
+  @include breakpoints($desktop-breakpoint) {
+    font-size: 7.2rem;
+    line-height: 78px;
+    letter-spacing: -1px;
+  }
+}
+
+h2 {
+  font-size: 3.8rem;
+  line-height: 44px;
+  letter-spacing: -0.53px;
+
+  @include breakpoints($desktop-breakpoint) {
+    font-size: 4.8rem;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
