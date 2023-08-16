@@ -1,0 +1,23 @@
+@import "variables";
+@import "breakpoints";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+

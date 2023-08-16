@@ -1,0 +1,5 @@
+@mixin breakpoints($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
