@@ -118,3 +118,20 @@ h3 {
   color: #faf8f6;
   background-image: linear-gradient(to bottom right, #a060ff, #cb30e3, #ffa84e);
 }
+
+.icon {
+  cursor: pointer;
+  fill: pink;
+}
+
+.icon-twitter {
+  margin: 0 1.5rem;
+}
+
+.icon-link .icon path {
+  transition: all 0.3s;
+}
+
+.icon-link:hover .icon path {
+  fill: #49566d;
+}
