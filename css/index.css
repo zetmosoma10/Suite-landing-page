@@ -135,3 +135,36 @@ h3 {
 .icon-link:hover .icon path {
   fill: #49566d;
 }
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+.ratings h2 {
+  font-size: 4.8rem;
+  line-height: 56px;
+  margin-bottom: 0.1rem;
+}
+.ratings p {
+  font-size: 1.6rem;
+  line-height: 26px;
+  letter-spacing: 2.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media (min-width: 689px) {
+  .ratings {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1110px) {
+  .ratings {
+    flex-direction: column;
+    text-align: left;
+  }
+}
